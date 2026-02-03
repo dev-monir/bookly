@@ -52,4 +52,5 @@ async def delete_book(book_uid: str, session: AsyncSession = Depends(get_session
             detail="Book not found"
         )
     
-    return None
+    else:
+        return {}
